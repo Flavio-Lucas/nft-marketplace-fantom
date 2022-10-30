@@ -1,0 +1,114 @@
+.nft {
+  border: red($color: #000000) 1px solid;
+  height: 100%;
+  padding: 2rem;
+
+  &--header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+
+    &--field {
+      width: calc(100% - 11rem);
+
+      label {
+        color: white;
+        font-family: Roboto, sans-serif;
+        height: 1rem;
+      }
+
+      &--input {
+        position: relative;
+        background-color: #2D2C4C;
+        border: none;
+        outline: none;
+        height: 2.5rem;
+        border-radius: .75rem;
+        margin-right: 1rem;
+
+        button.upload-button {
+          // border: solid red 1px;
+          background-color: #3C3B62 !important;
+          position: absolute;
+          right: 0;
+          background: none;
+          width: 4.5rem;
+
+          &:hover {
+            background-color: #535288 !important;
+          }
+
+          >img {
+            border-radius: 0;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+          }
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          background: none;
+          border: none;
+          outline: none;
+          padding: 0 2rem;
+          color: white;
+        }
+      }
+
+    }
+
+    button {
+      background-color: #BA46E1;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      height: 2.5rem;
+      width: 10rem;
+      border-radius: .75rem !important;
+
+      &:hover {
+        background-color: #8633a1;
+      }
+    }
+  }
+
+  &--body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .7vw;
+  }
+}
+
+.card {
+  border-radius: 1.5rem;
+  background: green;
+  max-width: 30vw;
+  min-width: 30vw;
+  height: 20vw;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  &--info {
+    position: absolute;
+    color: white;
+    background-color: #1D1933;
+    border-radius: 0.75rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem 1rem;
+  }
+}
